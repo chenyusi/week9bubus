@@ -161,8 +161,8 @@ margin-right: 20px;
 }
 
 #header6{
-	width: 330px;
-	height: 75px;
+	/*width: 330px;
+	height: 75px;*/
 	background-color: #4fc1e9;
 	background-image: url(../bubbleus/images/feeding_title.png);
 
@@ -599,9 +599,6 @@ margin-right: 20px;
 
 
 
-.doneCtr {
-     text-align: center;
-}
 
 }
 
