@@ -10,6 +10,6 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$('.doneBtn').click(function(e) {
-		ga("send", "event", "doneBtn", "click");
+		ga("send", "event", "button", "click");
 	});
 }
