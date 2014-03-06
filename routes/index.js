@@ -1,4 +1,4 @@
-// Get all of our friend data
+
 var data = require('../data.json');
 var piggy = require('../piggy.json')
 
@@ -11,6 +11,17 @@ exports.text_page = function(req, res){
 	res.render('text');
 }
 
-exports.feed_page = function(req, res){
-	res.render('feed');
+exports.feedchanged = function(req, res){
+	var old = new Boolean();
+	old = false;
+  	res.render('feed', {'old':old} );
+  	//console.log(old);
 }
+
+exports.feed = function(req, res){
+	var old = new Boolean();
+	old = true;
+  	res.render('feed', {'old':old}  );
+  	//console.log(old);
+}
+

@@ -42,7 +42,10 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/text', index.text_page);
-app.get('/feed', index.feed_page);
+//test out the form in feed A and B pages
+app.get('/feed', index.feed);
+app.get('/feedchanged', index.feedchanged);
+
 app.post('/submit_text', text.create);
 app.post('/submit_detail', piggy.submit_detail);
 app.post('/list',list.showlist );
